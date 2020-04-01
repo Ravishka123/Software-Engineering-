@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Freelancers Software Solutions</title>	
+
+<style>
+body{
+    font-family: Arial;
+    font-size: 20px;
+    text-align:center;
+}
+body .form_wrapper{
+
+    display:inline-block;
+    background-color: #fff;
+    border-radius: 5px;
+    height: auto;
+    padding: 15px 18px;
+    margin: 10% auto;
+    margin-left: auto;
+    margin-right: auto;
+} 
+</style>
+</head>
+<body>
+
+
+<h1 style="font-family: Sans;font-size: 40px;color: blue;">Video Enhancer</h1>
+
+<h2 style="font-family: Times New Roman;font-size: 18px;color: red;">Powered by: Freelancers Software Solutions</h2><br>
+
+
+    <form action="fileUploadScript.php" method="post" enctype="multipart/form-data">
+
+<label for="enhancement">Select type of enhancement:</label><br>
+	<select name="enhancement">
+	       <option value="color">Color</option>
+		   <option value="magnification">Magnification</option>
+	</select><br><br>
+    
+	<label for="vid_name">Name your video:</label><br>
+	<input type="text" id="vid_name" name="vid_name"><br><br>
+    
+	<label for="vid_description">Describe your video:</label><br>
+	<input type="text" id="vid_description" name="vid_description"><br><br>
+
+
+
+
+
+        Upload a File:
+        <input type="file" name="the_file" id="fileToUpload">
+        <input type="submit" name="submit" value="Start Upload">
+    </form>
+</body>
+</html>
